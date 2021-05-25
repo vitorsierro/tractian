@@ -26,17 +26,16 @@ export default function Other({ page, modo }) {
         pegarUm(setDados, 'companies', global.id);
       }
     }
-  },[global.id]);
+  },[global.id,modo,page]);
   
   useEffect(() => {
       if (page === 'units') {
         setName(dados.name);
         setCompanyId(dados.companyId);
       } else {
-        pegarUm(setDados, 'companies', global.id);
         setName(dados.name);
     }
-  }, [dados]);
+  }, [dados,page]);
   
   function handleEnviar() {
     if(page === "units"){

@@ -42,8 +42,7 @@ export default function Assets({ modo }) {
 
   const [dados, setDados] = useState({});
   const id = window.location.pathname.split("/")[3];
-  const specifications = { ...dados.specifications }
-  const metrics = { ...dados.metrics };
+  
 
   var data = new Date();
   var formulario;
@@ -53,15 +52,15 @@ export default function Assets({ modo }) {
     mes = 12;
   }
   useEffect(() => {
-    if (id !== undefined) {
-      if (modo === 'editar') {
+    if (id !== undefined && modo === 'editar' ){
         pegarUm(setDados, "assets", id)
-      }
     }
-  }, [id])
+  }, [id, modo]);
+  
   useEffect(() => {
-    if (id !== undefined) {
-      if (modo === 'editar') {
+    const specifications = { ...dados.specifications }
+    const metrics = { ...dados.metrics };
+    if (dados !== {} && modo === 'editar' ){
         setSensors(dados.sensors)
         setModelo(dados.model)
         setStatus(dados.status)
@@ -92,8 +91,7 @@ export default function Assets({ modo }) {
         setUnitId(dados.unitId)
         setCompanyId(dados.companyId)
       }
-    }
-  }, [dados])
+  }, [dados, modo])
 
   function handleEnviar() {
     formulario = {
@@ -255,7 +253,6 @@ export default function Assets({ modo }) {
               {modo === 'editar' ?
                 <Row>
                   {calendario !== undefined &&
-                   console.log( moment(`${calendario[2]}/${calendario[1]}/${calendario[0]}`)),
                     <DatePicker
                     value={
                       moment(`${calendario[2]}/${calendario[1]}/${calendario[0]}`, dateFormat)} format={dateFormat} className={styled.Calendario} onChange={(event) => (setCalendario(event.target.value))} />}

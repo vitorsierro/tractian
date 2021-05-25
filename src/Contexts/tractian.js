@@ -14,7 +14,6 @@ export function TractianContext({children}){
 
   useEffect(() => {
     location !== undefined &&  setId(location);
-    console.log(id)
   }, [location])
   
   useEffect(() => {

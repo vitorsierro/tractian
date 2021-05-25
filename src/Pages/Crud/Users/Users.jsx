@@ -25,16 +25,16 @@ export default function Users({ modo }) {
     if (modo === 'editar' && id !== undefined) {
       pegarUm(setDados, "users", id)
     }
-  }, [id])
+  }, [id,modo])
 
   useEffect(() => {
-    if (modo === 'editar' && id !== undefined) {
+    if (modo === 'editar' && dados !== {}) {
       setEmail(dados.email);
       setName(dados.name);
       setUnitId(dados.unitId);
       setCompanyId(dados.CompanyId);
     }
-  }, [dados]);
+  }, [dados,modo]);
 
   function handleEnviar() {
     formulario = {
