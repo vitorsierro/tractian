@@ -1,0 +1,34 @@
+.Titulo{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+.SubTitulo{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.AtivosInput{
+  width: 20rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.Imagens {
+  width: 43rem;
+  margin-left: 1.5rem;
+}
+.IconImage{
+  margin-left: 3.5rem;
+}
+.Hr{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.Calendario {
+  width: 10rem;
+  margin-right: 1.5rem;
+}
+.Button {
+  position: relative;
+  left: 90%;
+}

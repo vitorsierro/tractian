@@ -1,0 +1,8 @@
+.grafico{
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+.highcharts-root{
+  padding-right: 12rem;
+}
