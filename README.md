@@ -13,7 +13,7 @@
 <h1>Libs e bibliotes utilizadas:</h1>
 <br>
 <img src =
-https://img.shields.io/static/v1?label=React_Router_DOM&message=Styled_Components&color=green&style=for-the-badgefor-the-badge&logo=REACT 
+https://img.shields.io/static/v1?label=React_Router_DOM&message=CSS_MODULE&color=green&style=for-the-badgefor-the-badge&logo=REACT 
 width="100%" height="100%" alt="bagde das libs utilizadas react router dom e styled components">
 <br>
 <img src =
