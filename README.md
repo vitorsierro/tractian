@@ -9,3 +9,20 @@
 
 <h1>Aprendizagem</h1>
 <p> nunca tinha usado as bibliotecas do ant design e o highcharts gostei muita de ambas apesar de achar a biblioteca do ant design muito pequena com outras bibliotecas tem como explorar mais. </p>
+
+<h1>Libs e bibliotes utilizadas:</h1>
+<br>
+<img src =
+https://img.shields.io/static/v1?label=React_Router_DOM&message=Styled_Components&color=green&style=for-the-badgefor-the-badge&logo=REACT 
+width="100%" height="100%" alt="bagde das libs utilizadas react router dom e styled components">
+<br>
+<img src =
+https://img.shields.io/static/v1?label=JSON-SERVER&message=AXIOS&color=blue&style=for-the-badgefor-the-badge&logo=REACT
+width="100%" height="100%" alt="bagde das libs utilizadas axios e json-server">
+<br>
+<img src =
+https://img.shields.io/static/v1?label=ANT_DESIGN&message=HIGHCHARTS&color=green&style=for-the-badgefor-the-badge&logo=REACT 
+width="100%" height="100%" alt="bagde das libs utilizadas react router dom e styled components">
+<br>
+
+Status do Projeto: Concluido :heavy_check_mark:
